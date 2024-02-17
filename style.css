@@ -228,8 +228,11 @@ section{
         margin-bottom: 5rem;
     }
     .hero-gallery{
-        display: none;  
-        
+        display: none;     
+    }
+
+    .hero-bio{
+        display: none;
     }
     .sm-bio{
         margin: 0;
