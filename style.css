@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+section{
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+/* Nav-bar custom css */
+
+.navbar-brand{
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.nav-link{
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+/* Home custom css */
+
+.home-container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-card{
+    width: 100%;
+    height: 80%;
+    border-bottom-right-radius: 5rem;
+}
+
+
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 5rem;
+}
+
+.card-body{
+    padding-top: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title span{
+    color: blue;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.town{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-name{
+    width: 100%;
+}
+
+.hero-name p{
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: large;
+}
+.name{
+    font-family: 'Merriweather', serif;
+    color: rgb(59, 59, 182);
+}
+
+.bio-text{
+    font-family: 'Merriweather', serif;
+    color: rgb(59, 59, 182);
+}
+
+.sm-bio{
+    margin-left: 50px;
+    color: rgb(121, 125, 128);
+    font-weight: lighter !important;
+}
+
+.hero-gallery{
+    width: 100%;
+}
+
+.gallery-tittle{
+    font-family: 'Merriweather', serif;
+    color: rgb(59, 59, 182);
+}
+.gel-cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+
+.card-img{
+    height: 10rem;
+    width: 13rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Biography Section custom css */
+.bio-home{
+    width: 100%;
+}
+
+.bio{
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.bio-paragraph{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+}
+
+.para-tittle{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.para-tittle h1{
+    font-family: 'Merriweather', serif;
+    color: rgb(59, 59, 182);
+}
+
+.bio-card img{
+    width: 30rem;
+    height: 15rem;
+}
+
+/* Gallery section custom css */
+
+.gallery-container{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 2rem;
+}
+.gel-card:hover{
+    scale: 1.1;    
+}
+
+/* Footer custom css */
+
+.dev-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dev-info a{
+    text-decoration: none;
+}
+
+.dev-socials{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.dev-socials i{
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.dev-socials i:hover{
+    scale: 1.5;
+}
+
+
+/* media queries  for mobile screens */
+
+@media screen and (max-width:540px) {
+  
+    .home-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .right-content{
+        padding: 0;
+    }
+    .hero-bio{
+        margin-bottom: 5rem;
+    }
+    .hero-gallery{
+        display: none;  
+        
+    }
+    .sm-bio{
+        margin: 0;
+    }
+    .card-img{
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .bio-home{
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 1rem;
+    } 
+    .bio-card img{
+        width: 18rem;
+        height: 15rem;
+    }
+
+    .bio-paragraph{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+    }
+    .gallery-container{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    
+}
+
+/* media queries  for medium screens */
+
+
+@media (max-width:890px) {
+    .home-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .right-content{
+        padding: 0;
+    }
+    .hero-bio{
+        margin-bottom: 5rem;
+    }
+    .hero-gallery{
+        display: none;  
+    }
+    
+
+    .sm-bio{
+        margin: 0;
+    }
+    .card-img{
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .bio-home{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .bio-paragraph{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+    }
+
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);   
+    }
+
+}
