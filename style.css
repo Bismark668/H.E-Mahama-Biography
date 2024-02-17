@@ -181,9 +181,7 @@ section{
     grid-gap: 1rem;
     padding: 2rem;
 }
-.gel-card:hover{
-    scale: 1.1;    
-}
+
 
 /* Footer custom css */
 
