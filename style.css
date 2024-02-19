@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
 }
 
 body{
@@ -217,6 +217,7 @@ section.sec-2{
 /* media queries  for mobile screens */
 @media screen and (max-width:340px) {
 
+
     .home-container{
         grid-template-columns: repeat(1,1fr);
     }
@@ -242,6 +243,7 @@ section.sec-2{
         display: none !important;
 
     }
+    
 
     .bio-home{
         grid-template-columns: repeat(1,1fr);
@@ -275,9 +277,9 @@ section.sec-2{
         font-size: 18px !important;
     }
 
-    .bio
+    .bio,
     .navbar-brand{
-        font-size: 50px !important;
+        font-size: 40px !important;
     }
 
     .name{
