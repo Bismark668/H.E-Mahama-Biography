@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-wrap: normal;
 }
 
 body{
@@ -48,6 +47,7 @@ section.sec-2{
     min-height: 100vh;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 3rem;
+    overflow: hidden;
 }
 
 .left-content{
@@ -145,6 +145,7 @@ section.sec-2{
 /* Biography Section custom css */
 .bio-home{
     width: 100%;
+    overflow: hidden;
 }
 
 .bio{
